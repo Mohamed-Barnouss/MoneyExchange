@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Money exchange</title>
+  </head>
+  <body>
+    <div class="appBody">
+      <h1>Exchange money</h1>
+
+      <!--
+      <label for="value">Insert value</label>
+      <input type="text" id="value" />
+      <label for="valueResult">Result value</label>
+      <input type="text" id="valueResult" />
+    -->
+      <div class="options">
+        <!--FROM-->
+        <div>
+          <label for="exchangeFrom">From</label>
+          <select id="exchangeFrom">
+            <option value="USD" title="usa">
+              <img src="https://flagcdn.com/us.svg" /> US dollar
+            </option>
+            <option value="JPY" title="japan">Japanese yen</option>
+            <option value="BGN" title="bulgaria">Bulgarian lev</option>
+            <option value="CZK" title="czech republic">Czech koruna</option>
+            <option value="DKK" title="denmark">Danish krone</option>
+            <option value="GBP" title="united kingdom">Pound sterling</option>
+            <option value="HUF" title="hungary">Hungarian forint</option>
+            <option value="PLN" title="poland">Polish zloty</option>
+            <option value="RON" title="romania">Romanian leu</option>
+            <option value="SEK" title="sweden">Swedish krona</option>
+            <option value="CHF" title="switzerland">Swiss franc</option>
+            <option value="ISK" title="iceland">Icelandic krona</option>
+            <option value="NOK" title="norway">Norwegian krone</option>
+            <option value="TRY" title="turkey">Turkish lira</option>
+            <option value="AUD" title="australia">Australian dollar</option>
+            <option value="BRL" title="brazil">Brazilian real</option>
+            <option value="CAD" title="canada">Canadian dollar</option>
+            <option value="CNY" title="china">Chinese yuan renminbi</option>
+            <option value="HKD" title="hong kong">Hong Kong dollar</option>
+            <option value="IDR" title="indonesia">Indonesian rupiah</option>
+            <option value="INR" title="india">Indian rupee</option>
+            <option value="KRW" title="south korea">South Korean won</option>
+            <option value="MXN" title="mexico">Mexican peso</option>
+            <option value="MYR" title="malaysia">Malaysian ringgit</option>
+            <option value="NZD" title="new zeland">New Zealand dollar</option>
+            <option value="PHP" title="philippines">Philippine peso</option>
+            <option value="SGD" title="singapore">Singapore dollar</option>
+            <option value="THB" title="thailand">Thai baht</option>
+            <option value="ZAR" title="south africa">South African rand</option>
+          </select>
+          <p class="arrow">&rarr;</p>
+          <label for="exchangeTo">To</label>
+          <select id="exchangeTo">
+            <option selected value>--- Select ---</option>
+            <option value="USD" title="usa">
+              <img src="https://flagcdn.com/us.svg" /> US dollar
+            </option>
+            <option value="JPY" title="japan">Japanese yen</option>
+            <option value="BGN" title="bulgaria">Bulgarian lev</option>
+            <option value="CZK" title="czech republic">Czech koruna</option>
+            <option value="DKK" title="denmark">Danish krone</option>
+            <option value="GBP" title="united kingdom">Pound sterling</option>
+            <option value="HUF" title="hungary">Hungarian forint</option>
+            <option value="PLN" title="poland">Polish zloty</option>
+            <option value="RON" title="romania">Romanian leu</option>
+            <option value="SEK" title="sweden">Swedish krona</option>
+            <option value="CHF" title="switzerland">Swiss franc</option>
+            <option value="ISK" title="iceland">Icelandic krona</option>
+            <option value="NOK" title="norway">Norwegian krone</option>
+            <option value="TRY" title="turkey">Turkish lira</option>
+            <option value="AUD" title="australia">Australian dollar</option>
+            <option value="BRL" title="brazil">Brazilian real</option>
+            <option value="CAD" title="canada">Canadian dollar</option>
+            <option value="CNY" title="china">Chinese yuan renminbi</option>
+            <option value="HKD" title="hong kong">Hong Kong dollar</option>
+            <option value="IDR" title="indonesia">Indonesian rupiah</option>
+            <option value="INR" title="india">Indian rupee</option>
+            <option value="KRW" title="south korea">South Korean won</option>
+            <option value="MXN" title="mexico">Mexican peso</option>
+            <option value="MYR" title="malaysia">Malaysian ringgit</option>
+            <option value="NZD" title="new zeland">New Zealand dollar</option>
+            <option value="PHP" title="philippines">Philippine peso</option>
+            <option value="SGD" title="singapore">Singapore dollar</option>
+            <option value="THB" title="thailand">Thai baht</option>
+            <option value="ZAR" title="south africa">South African rand</option>
+          </select>
+        </div>
+        <div class="inputs">
+          <label for="value">Insert value</label>
+          <img class="first-flag hidden" src="https://flagcdn.com/us.svg" />
+          <input type="text" id="value" />
+          <div class="insert-symbol"></div>
+          <label for="valueResult">Result value: </label>
+          <img class="second-flag hidden" src="https://flagcdn.com/it.svg" />
+          <output type="text" id="valueResult" />
+          <div class="result-symbol"></div>
+        </div>
+        <div class="button-container">
+          <button id="btn">CHANGE</button>
+        </div>
+        <!--TO-->
+      </div>
+    </div>
+  </body>
+</html>
