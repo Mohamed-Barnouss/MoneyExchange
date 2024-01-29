@@ -1,2 +1,2 @@
 # MoneyExchange
-Money exchange
+Money exchange project using API 
